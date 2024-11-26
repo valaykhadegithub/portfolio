@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crime Data Analysis Explanation</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS (Animate on Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      h1 {
+        color: #333;
+      }
+      h2 {
+        color: #007bff;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      ul {
+        margin-bottom: 15px;
+      }
+      .highlight {
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-left: 5px solid #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header id="navbar">
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top hero bg-primary text-white text-center py-3"
+      >
+        <a class="navbar-brand text-white" href="index.html">Valay Khade</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="../portfolio/index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../portfolio/index.html#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../portfolio/index.html#contact"
+                >Contact</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../portfolio/more-certificates.html#certificates"
+                >Certificate</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--project Explanation-->
+
+    <section id="contact" class="py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <!-- Center the image container -->
+          <div class="col-md-6 text-center">
+            <!-- Wider column and centered content -->
+            <img
+              src="images/crimewomen.PNG"
+              alt="Crime Analysis"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="images\crimewomen2.png"
+              alt="Crime Analysis"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <h1>Crime Data Analysis Project Explanation</h1>
+
+          <p>
+            I conducted an analysis on a dataset related to crimes against women
+            in India from 2001 to 2021, covering categories such as rape,
+            kidnapping & abduction, dowry deaths, assaults, domestic violence,
+            and more. I used Python with libraries like Pandas for data
+            manipulation, NumPy for numerical operations, Matplotlib, and
+            Seaborn for data visualization.
+          </p>
+
+          <h2>Data Preparation</h2>
+          <div class="highlight">
+            <p>
+              I loaded the dataset using Pandas and conducted an initial review
+              using methods like <code>df.head()</code> to see the first few
+              rows and understand the data structure. I noticed there was an
+              unnecessary column, ‘Unnamed: 0’, which I removed. I also verified
+              that there were no missing values or duplicated entries by using
+              <code>df.isna().sum()</code> and
+              <code>df.duplicated().sum()</code>.
+            </p>
+            <p>
+              I used <code>df.info()</code> to check the data types and
+              confirmed that the dataset was ready for analysis.
+            </p>
+          </div>
+
+          <h2>Data Analysis</h2>
+          <p>
+            Using <code>df.describe()</code>, I identified the mean, median, and
+            standard deviation for different crime categories. This helped to
+            understand the general trend and distribution of data across years.
+          </p>
+
+          <h3>Handling Unique Values</h3>
+          <p>
+            There were some inconsistencies in the 'State' column, where states
+            were repeated with different capitalizations (like 'MADHYA PRADESH'
+            and 'Madhya Pradesh'). I grouped them correctly for accurate
+            analysis.
+          </p>
+
+          <h3>State-Level Analysis</h3>
+          <ul>
+            <li>
+              I analyzed crime patterns at the state level. For example, I found
+              that Madhya Pradesh and Rajasthan had the highest recorded
+              incidents of rape, with counts of 43,552 and 31,850, respectively.
+            </li>
+            <li>
+              I visualized the number of rape cases over the years using a bar
+              chart, helping to highlight trends over time.
+            </li>
+          </ul>
+
+          <h3>Kidnapping & Abduction (K&A) and Dowry Deaths (DD) Analysis</h3>
+          <p>
+            I aggregated the data for kidnapping & abduction and dowry deaths.
+            Uttar Pradesh topped both categories, with a total of 123,058
+            incidents. I created a new column, ‘Total’, by adding the values
+            from ‘K&A’ and ‘DD’ to see the combined impact of these crimes.
+          </p>
+
+          <h3>Assault Analysis</h3>
+          <p>
+            For the ‘Assault on Women’ category, I plotted a pie chart to show
+            the distribution by state. The top states accounted for a
+            significant portion of the incidents.
+          </p>
+
+          <h3>Other Crimes Against Women</h3>
+          <p>
+            I also analyzed other crimes like ‘Assault on Men’ (AoM) and grouped
+            the data to show the states with the highest incidents. Andhra
+            Pradesh and Uttar Pradesh had the most reported cases.
+          </p>
+
+          <h2>Visualizations and Insights</h2>
+          <p>
+            I used bar charts, pie charts, and other visualizations to make the
+            data easily understandable and to identify trends and outliers.
+            These visual insights were crucial in interpreting the data.
+          </p>
+          <p>
+            For instance, the pie chart on assaults clearly showed that a few
+            states accounted for a large percentage of total incidents.
+          </p>
+
+          <h2>Challenges and Solutions</h2>
+          <p>
+            One challenge was dealing with inconsistent state names due to
+            variations in capitalization. I addressed this by grouping and
+            aggregating the data accurately.
+          </p>
+          <p>
+            Fortunately, there were no missing values, which simplified the
+            analysis.
+          </p>
+
+          <p>
+            The analysis revealed that Madhya Pradesh and Uttar Pradesh are
+            particularly high in crimes like rape and kidnapping, indicating a
+            need for focused interventions in these regions.
+          </p>
+          <p>
+            These insights can help policymakers and law enforcement agencies
+            allocate resources more effectively and target areas with high crime
+            rates.
+          </p>
+
+          <h2>Technical Skills Showcased</h2>
+          <p>
+            This project highlighted my ability to clean, manipulate, and
+            analyze complex datasets using Python. I also demonstrated
+            proficiency in creating visualizations that convey clear and
+            impactful insights.
+          </p>
+          <p>
+            These skills are crucial for a Data Analyst, as they enable me to
+            turn raw data into actionable insights that can drive
+            decision-making.
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-up">Get in Touch</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              Email:
+              <a href="mailto:durvesh@example.com">valaykhade04@gmail.com</a>
+            </p>
+            <p>Phone: +91 7709647173</p>
+          </div>
+          <div class="col-md-6">
+            <div class="social-links mt-5" data-aos="fade-up">
+              <button href="" class="rounded-pill dribble">
+                <a href="https://www.linkedin.com/in/valay-khade-975266293/">
+                  <i class="bi bi-linkedin"></i
+                ></a>
+              </button>
+              <button href="" class="rounded-pill whatsapp">
+                <a href="https://www.instagram.com/valay_khade/"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </button>
+              <button href="" class="rounded-pill behance">
+                <a href="https://github.com/valaykhadegithub?tab=repositories">
+                  <i class="bi bi-github"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--contact section end
+-->
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <p>&copy; 2024 Valay Ravidas Khade | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS & dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- AOS Library for Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
+  </body>
+</html>

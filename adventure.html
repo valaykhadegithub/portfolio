@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power BI Dashboard Project Overview</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS (Animate on Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+      h1,
+      h2 {
+        color: #2c3e50;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin: 10px 0;
+      }
+      .content {
+        margin-bottom: 20px;
+      }
+      .content h3 {
+        color: #2980b9;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header id="navbar">
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top hero bg-primary text-white text-center py-3"
+      >
+        <a class="navbar-brand text-white" href="index.html">Valay Khade</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../portfolio/index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../portfolio/index.html#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../portfolio/index.html#contact"
+                >Contact</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../portfolio/more-certificates.html#certificates"
+                >Certificate</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--project Explanation-->
+
+    <section id="contact" class="py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <!-- Center the image container -->
+          <div class="col-md-6 text-center">
+            <!-- Wider column and centered content -->
+            <img
+              src="images\Dashboard.PNG"
+              alt="Crime Analysis"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 text-center">
+            <!-- Wider column and centered content -->
+            <img
+              src="images\Dashboard2.PNG"
+              alt="Crime Analysis"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="content">
+            <h1>Power BI Dashboard Project Overview</h1>
+
+            <div class="section">
+              <h2>Project Overview</h2>
+              <p>
+                I developed a comprehensive Power BI dashboard for
+                AdventureWorks, focusing on analyzing sales performance metrics.
+                The primary goal was to provide a clear and actionable overview
+                of revenue, profitability, order trends, and return rates. This
+                dashboard serves as a valuable tool for decision-makers to
+                monitor key performance indicators (KPIs) and identify areas of
+                opportunity or concern.
+              </p>
+            </div>
+
+            <div class="section">
+              <h2>Objectives</h2>
+              <ul>
+                <li>To track overall revenue and profitability.</li>
+                <li>To analyze sales trends over time.</li>
+                <li>
+                  To monitor monthly changes in key metrics like revenue,
+                  orders, and returns.
+                </li>
+                <li>
+                  To categorize and evaluate sales by product categories and
+                  individual products.
+                </li>
+                <li>
+                  To highlight product performance, including identification of
+                  products with high return rates.
+                </li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h2>Data Preparation</h2>
+              <p>
+                The dataset was sourced from AdventureWorks, containing sales
+                information on various product categories. Data was cleaned and
+                transformed in Power BI using Power Query:
+              </p>
+              <ul>
+                <li>Removed duplicates and handled missing values.</li>
+                <li>Standardized date formats for time-series analysis.</li>
+                <li>
+                  Created calculated columns for new metrics such as monthly
+                  revenue growth and return rate.
+                </li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h2>Key Metrics & Visualizations</h2>
+              <h3>KPI Cards:</h3>
+              <ul>
+                <li>
+                  <strong>Revenue:</strong> Displayed a total of $25M in
+                  revenue, indicating overall sales performance.
+                </li>
+                <li>
+                  <strong>Profit:</strong> A total profit of $10M, highlighting
+                  the company’s profitability.
+                </li>
+                <li>
+                  <strong>Orders:</strong> 25.2K orders placed over the period,
+                  reflecting customer demand.
+                </li>
+                <li>
+                  <strong>Return Rate:</strong> 2.17% overall return rate,
+                  helping assess product satisfaction.
+                </li>
+              </ul>
+
+              <h3>Revenue Trending Line Chart:</h3>
+              <ul>
+                <li>
+                  This chart provides a visual trend of monthly revenue from
+                  January 2020 to mid-2022.
+                </li>
+                <li>
+                  A trend line was added to quickly indicate the direction of
+                  revenue growth, showing steady increases.
+                </li>
+              </ul>
+
+              <h3>Monthly KPIs:</h3>
+              <ul>
+                <li>
+                  <strong>Revenue:</strong> $1.83M with a 3.31% increase from
+                  the previous month.
+                </li>
+                <li>
+                  <strong>Orders:</strong> 2,146 with a slight decrease of 0.88%
+                  from the previous month.
+                </li>
+                <li>
+                  <strong>Returns:</strong> 166 with a small decrease,
+                  reflecting a 1.78% improvement from the previous month.
+                </li>
+              </ul>
+
+              <h3>Orders by Category:</h3>
+              <ul>
+                <li>
+                  A bar chart breaks down orders by category (Accessories,
+                  Bikes, Clothing), identifying Accessories as the
+                  top-performing category with 17K orders.
+                </li>
+              </ul>
+
+              <h3>Product-Level Insights:</h3>
+              <ul>
+                <li>A table visual showing:</li>
+                <ul>
+                  <li>Product Name</li>
+                  <li>Total Orders</li>
+                  <li>Total Revenue</li>
+                  <li>
+                    Return Rate: Conditional formatting was used to highlight
+                    products with high return rates, signaling potential issues
+                    with certain items.
+                  </li>
+                </ul>
+              </ul>
+
+              <h3>Interactive Elements:</h3>
+              <ul>
+                <li>
+                  Added buttons like Tires and Tubes and Shorts to allow users
+                  to drill down into specific product categories, enabling a
+                  more focused analysis.
+                </li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h2>Tools & Techniques Used</h2>
+              <ul>
+                <li>
+                  Power BI for creating an interactive and dynamic dashboard.
+                </li>
+                <li>Power Query for data cleaning and transformation.</li>
+                <li>
+                  DAX (Data Analysis Expressions) to create calculated measures
+                  like monthly revenue growth and return rates.
+                </li>
+                <li>
+                  Conditional Formatting for highlighting critical data points,
+                  such as high return rates.
+                </li>
+                <li>
+                  Slicers & Buttons for interactivity, allowing users to filter
+                  data dynamically.
+                </li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h2>Key Insights</h2>
+              <ul>
+                <li>
+                  A consistent upward trend in revenue indicates positive
+                  growth.
+                </li>
+                <li>
+                  Accessories are the most popular category, driving a
+                  significant portion of sales.
+                </li>
+                <li>
+                  Some products, like the Sport-100 Helmet, Red, have a notably
+                  high return rate, indicating potential quality issues or
+                  customer dissatisfaction.
+                </li>
+                <li>
+                  The monthly KPI comparison feature provides a quick snapshot
+                  of performance changes, aiding in timely decision-making.
+                </li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h2>Challenges & Learnings</h2>
+              <ul>
+                <li>
+                  <strong>Data Cleansing:</strong> Managing inconsistencies in
+                  raw data required detailed transformation steps to ensure
+                  accuracy.
+                </li>
+                <li>
+                  <strong>Performance Optimization:</strong> Optimized the data
+                  model to handle large datasets efficiently, ensuring fast
+                  performance in the dashboard.
+                </li>
+                <li>
+                  <strong>Interactivity:</strong> Balancing a clear visual
+                  layout while incorporating interactivity required careful
+                  consideration to make the dashboard intuitive for end users.
+                </li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h2>Impact & Value</h2>
+              <p>
+                The dashboard enables stakeholders to quickly access critical
+                business metrics and identify trends in sales performance. This
+                makes it easier to strategize marketing efforts, inventory
+                management, and product quality improvements based on real-time
+                data insights.
+              </p>
+            </div>
+
+            <div class="section">
+              <h2>Closing Statement</h2>
+              <p>
+                This project showcased my ability to leverage Power BI for data
+                analysis and visualization. I was able to transform complex data
+                into actionable insights, demonstrating my skills in data
+                modeling, DAX calculations, and interactive dashboard design. It
+                also highlighted my understanding of business metrics and how to
+                visually present data for strategic decision-making.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-up">Get in Touch</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              Email:
+              <a href="mailto:durvesh@example.com">valaykhade04@gmail.com</a>
+            </p>
+            <p>Phone: +91 7709647173</p>
+          </div>
+          <div class="col-md-6">
+            <div class="social-links mt-5" data-aos="fade-up">
+              <button href="" class="rounded-pill dribble">
+                <a href="https://www.linkedin.com/in/valay-khade-975266293/">
+                  <i class="bi bi-linkedin"></i
+                ></a>
+              </button>
+              <button href="" class="rounded-pill whatsapp">
+                <a href="https://www.instagram.com/valay_khade/"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </button>
+              <button href="" class="rounded-pill behance">
+                <a href="https://github.com/valaykhadegithub?tab=repositories">
+                  <i class="bi bi-github"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--contact section end
+-->
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <p>&copy; 2024 Valay Ravidas Khade | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS & dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- AOS Library for Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
+  </body>
+</html>
